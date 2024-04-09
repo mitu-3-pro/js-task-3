@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <script src='main.js'></script>
+        <style>
+            body{
+                background: url(background.jpg);
+                background-size: cover;
+            }
+            center{
+              background-color: rgb(145, 199, 196);  
+              border: 2px solid black;
+              width: max-content;
+              padding: 50px;
+              margin-top: 200px;
+              margin-left: 40%;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <form name="cal">
+            <input type="number" id="num1" placeholder="Number-1" /> <br/><br/>
+            <!-- <input type-="text" name="num2" placeholder="Number-2"/> <br/><br/> -->
+            <select id="select" name="-please select-">
+                <option >-please select-</option>
+                <option value="add">addition [+]</option>
+                <option value="sub">subtraction [-]</option>
+                <option value="mul">multiplication [*]</option>
+                <option value="div">division [/]</option>
+            </select><br/><br/>
+            <input type-="number" id="num2" placeholder="Number-2"/> <br/>
+            <!-- <button type="submit" onclick="calculate(this.value)"/>Result</button> -->
+            <p id="res"></p>
+        </form>
+        <button type="submit" onclick="calculate()">Result</button>
+        </center>
+    </body>
+</html>
